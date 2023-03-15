@@ -1,0 +1,17 @@
+// Navigating to the Pablo Bozzi's session using CDP 😎
+{"method": "Page.navigate", "params": {"url": "https://youtu.be/pKl7GVk60Ow"}}
+
+
+// Let's get serious
+{"method": "Page.navigate", "params": {"url": "https://testpages.herokuapp.com/styled/dynamic-buttons-simple.html"}}
+
+// Getting the element
+{"method": "DOM.performSearch", "params":  {"query": "//button[@id='button00']"}}
+{"method": "DOM.getSearchResults", "params":  {"searchId": "xxx.xx", "fromIndex": 0, "toIndex": 1}}
+
+// Interacting
+{"method": "DOM.describeNode", "params":  {"nodeId": 666}}
+{"method": "DOM.getAttributes", "params":  {"nodeId": 666}}
+{"method": "CSS.getComputedStyleForNode", "params":  {"nodeId": 666}}
+
+// Note: replace the "xxx.xx" and 666 to the returned IDs
